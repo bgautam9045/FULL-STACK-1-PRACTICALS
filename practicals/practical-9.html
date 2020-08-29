@@ -1,91 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical-9</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/practical-9.css">
 </head>
-<link rel="stylesheet" href="../CSS/practical-9.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <body>
-    <div id="content">
-    <div id="header">        
-        <h1>Beta-Labs</h1>
-        <input type="checkbox" id="chk">
-        <label for="chk" class="show-button">
-            <i class="fa fa-bars"></i>
-        </label>
-    <ul class="nav">        
-        <li><a href="#banner"><i class="fa fa-home"></i>Home</a></li>
-        <li><a href="#Section2"><i class="fa fa-info"></i>About Us</a></li>
-        <li><a href="#Section1"><i class="fa fa-users"></i>Team</a></li>
-        <li><a href="#Section3"><i class="fa fa-cogs"></i>Technologies</a></li>
-        <li><a href="#Footer"><i class="fa fa-envelope"></i>Contact Us</a></li>
-        <label for="chk" class="hide-button">
-            <i class="fa fa-times"></i>
-        </label>
-    </ul></div>
-    <div id="banner">
-        <br><br>
-    <img src="../images/Banner.jpg">
-    <h1>
-        Practical-9
-    </h1>
-    </div>
-    <div id="Section1">
-        <h3>Team Members</h3>
-        <div id='circle_container'>
-        <div class="members" ><img src="../images/1.png" alt="TeamMember1"></div>
-        <div class="members"><img src="../images/2.png" alt="TeamMember2"></div>
-        <div class="members"><img src="../images/3.png" alt="TeamMember3"></div>
-        <div class="members"><img src="../images/9.png" alt="TeamMember4"></div>
-    </div></div>
-    <div id="Section2">
-        <h3>About Us</h3>
-    <div id="Section2Left">
-        <h2 style="margin-bottom: 4px;">About Us</h2>
-        <p>Lorem ipsum dolor sit amet consectetur sequi, possimus, animi bkubjdsb hgdluiasgiu  usagIUg sad uisadgiu adsuiguds agugdas iugiudasgiu gadsiug uisdgiugdasuig iuadsgiusadgiugadsiu guigadsuig uiusgdag accusantium aliquid vero debitis quasi minus magni commodi, ullam temporibus nulla! Impedit deleniti voluptas aut nihil inventore rem eveniet! Nostrum, tenetur? Saepe, odit tempore. Deserunt, voluptatem? Odit necessitatibus cum aspernatur ratione omnis eius temporibus dolorum. Nihil corporis quisquam reiciendis, blanditiis iusto, sed itaque et repellendus pariatur quos odio! Nostrum nemo doloribus deleniti totam cupiditate accusamus nisi aperiam. Unde quae in, ipsa aliquam explicabo illo esse quaerat sed eius optio porro, libero nam dolorem nisi fuga. Explicabo blanditiis nulla illo in amet magni eius pariatur expedita ratione illum.</p>
-    </div>
-    <div id="Section2Right">
-        <div id="article"><img src="../images/p1.jpg" alt="Project1"><h5>Project-1</h5></div>
-        <div id="article"><img src="../images/p2.jpeg" alt="Project2"><h5>Project-2</h5></div>
-        <div id="article"><img src="../images/p3.jpg" alt="Project3"><h5>Project-3</h5></div>
-    </div>
-    </div>
-    <div id="Section3">
-        <h3>Technologies</h3>
-    <div id="box_container">
-        <div class="box">
-        <img src="../images/html img.png" alt="HTML" >
-        <h4 style="text-align: center; color: black;">Intoduction to HTML</h4>
-        <p>Lorem ipsum dolor  elit. Repellat bvhdasviv ivasuiv ivasuvviv quis nostrum quos quidem praesentium eius expedita.</p>
-        <a href="../practicals/practical-5-html.html">Read more</a>
-    </div>
-        <div class="box">
-        <img src="../images/css img.png" alt="CSS" >
-        <h4 style="text-align: center; color: black;">Intoduction to CSS</h4>
-        <p>Lorem adipisicing elit. Molestiae hfuys hsh  qui jhguadsgjjs hgsdgb fuga placeat impedit atque numquam explicabo.
-        </p>
-        <a href="../practicals/practical-5-css.html">Read more</a>
-    </div>
-        <div class="box">
-        <img src="../images/JS img.jpg" alt="JavaScript" >
-        <h4 style="text-align: center; color: black;">Intoduction to JavaScript</h4>
-        <p>Lorem consectetur, bdfuisub jibdfiu jhgusagdui ygsuyg  harum bguigadsui dolore neque hgiuadsgjbbj incidunt blanditiis sapiente!</p>
-        <a href="../practicals/practical-5-js.html">Read more</a></div>
-      <div class="box">
-        <img src="../images/bootstrap img.png" alt="BootStrap" >
-        <h4 style="text-align: center; color: black;">Intoduction to BootStrap</h4>
-        <p>Lorem . Provident yugoag hsdhhads busad bhuisuf oiosajopj ducimus saepe atque tempore ratione expedita deserunt!</p>
-        <a href="../practicals/practical-5-bs.html">Read more</a>
-        </div></div>
-        
-    </div>
-        <h3>Contact Us</h3>
-    <div id="Footer">
-       Website Template for Practical-9 <a href="https://www.beta-labs.in/" target="_blank">Beta-Labs</a>
-        <br>
-        <a href="#top">Back to top</a>
+    <a name="top"></a>
+    <div id="container">
+        <div id="header">
+            <input type="checkbox" id="chk">
+            <label for="chk" id="show-btn">
+                    <i class="fa fa-bars"></i>
+                </label>
+            <ul id="nav">
+                <li>
+                    <a href="#banner"><i class="fa fa-home"></i>home</a>
+                </li>
+                <li>
+                    <a href="#section2"><i class="fa fa-info-circle"></i>about</a>
+                </li>
+                <li>
+                    <a href="#section1"><i class="fa fa-user"></i>team</a>
+                </li>
+                <li>
+                    <a href="#section3"><i class="fa fa-cogs"></i>technologies</a>
+                </li>
+                <li>
+                    <a href="#section4"><i class="fa fa-address-book-o"></i>contact</a>
+                </li>
+                <label for="chk" id="hide-btn">
+                    <i class="fa fa-times"></i>
+                </label>
+            </ul>
+        </div>
+        <div id="banner">
+            <h1>PRACTICAL - 9</h1>
+            <img src="../images/Banner.jpg" alt="Banner">
+        </div>
+        <div id="section1">
+            <h1>Team Members</h1>
+            <div id="circle-container">
+                <div class="card1">
+                    <img src="../images/1.png" alt="Member-1">
+                </div>
+                <div class="card1">
+                    <img src="../images/2.png" alt="Member-2">
+                </div>
+                <div class="card1">
+                    <img src="../images/3.png" alt="Member-3">
+                </div>
+                <div class="card1">
+                    <img src="../images/9.png" alt="Member-4">
+                </div>
+            </div>
+        </div>
+        <div id="section2">
+            <h1>About Us</h1>
+            <div id="leftSideBar">
+                <h2>About Projects</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima repellat iure porro voluptate reiciendis debitis eum nesciunt pariatur asperiores sed, enim aspernatur quasi nobis deserunt inventore aliquid optio ab voluptatum, vitae odit voluptatibus.
+                    Quaerat ipsa eos rerum nobis aperiam. Sint laboriosam hic nam sunt dicta. Saepe beatae neque in cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatum ipsam blanditiis consequatur distinctio, facere sapiente
+                    molestias, velit delectus maiores exercitationem ea nam vitae omnis laborum eos libero, a quae veniam fugiat nisi? Labore cupiditate quis impedit, fugiat autem pariatur cum molestias culpa repellendus optio illum, omnis nesciunt fugit
+                    assumenda libero, vel tempore. Assumenda id reprehenderit consectetur sequi libero expedita dolorem provident doloremque impedit ea esse incidunt nisi dolore voluptatum consequatur, fuga aspernatur quisquam alias possimus molestias
+                    facere aperiam error. Sed sunt facilis repellendus nisi ullam aspernatur doloribus nulla laudantium voluptates adipisci! Beatae dolor maiores illo aperiam quas dolorum placeat! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Hic, assumenda eaque iste culpa debitis cupiditate adipisci facere minima rerum officia! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum ab quas impedit ut ea vero amet maxime molestias minima iusto harum quo nostrum
+                    esse sint, pariatur quis repudiandae sed modi id mollitia laborum illum beatae. Non, hic! Perspiciatis corrupti possimus impedit perferendis cumque molestiae ad officiis quod odio hic optio saepe doloribus animi aperiam id, enim quae
+                    iste soluta ab esse alias voluptatum voluptates veniam? Minima alias quam deleniti consectetur. Cupiditate porro excepturi sequi sunt. Aliquid aliquam, et animi, a, nisi at non numquam deleniti reprehenderit maxime dolores. Aliquam
+                    quos aut earum. Molestias, natus. Eligendi quasi hic voluptates sint dolores?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt asperiores natus nemo illum. Quia ab quam magni rerum excepturi vitae voluptatum possimus
+                    totam sed saepe.
+                </p>
+            </div>
+            <div id="rightSideBar">
+                <div class="artical">
+                    <h3>Project-1</h3>
+                    <img src="../images/p1.jpg" alt="Project-1">
+                </div>
+                <div class="artical">
+                    <h3>Project-2</h3>
+                    <img src="../images/p2.jpeg" alt="Project-2">
+                </div>
+                <div class="artical">
+                    <h3>Project-3</h3>
+                    <img src="../images/p3.jpg" alt="Project-3">
+                </div>
+            </div>
+        </div>
+        <div id="section3">
+            <h1>Technologies Used</h1>
+            <div id="square-container">
+                <div class="card2">
+                    <img src="../images/html img.png" alt="Introduction to HTML">
+                    <h3>Introduction to HTML</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quia blanditiis iusto corporis fugit ab quis quos necessitatibus asperiores voluptates.
+                    </p>
+                    <a href="../practicals/practical-5-html.html">Read More</a>
+                </div>
+                <div class="card2">
+                    <img src="../images/css img.png" alt="Introduction to CSS">
+                    <h3>Introduction to CSS</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quia blanditiis iusto corporis fugit ab quis quos necessitatibus asperiores voluptates.
+                    </p>
+                    <a href="../practicals/practical-5-css.html">Read More</a>
+                </div>
+                <div class="card2">
+                    <img src="../images/JS img.jpg" alt="Introduction to JavaScript">
+                    <h3>Introduction to JavaScript</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quia blanditiis iusto corporis fugit ab quis quos necessitatibus asperiores voluptates.
+                    </p>
+                    <a href="../practicals/practical-5-js.html">Read More</a>
+                </div>
+                <div class="card2">
+                    <img src="../images/bootstrap img.png" alt="Introduction to Bootstrap">
+                    <h3>Introduction to Bootstrap</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quia blanditiis iusto corporis fugit ab quis quos necessitatibus asperiores voluptates.
+                    </p>
+                    <a href="../practicals/practical-5-bs.html">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div id="section4">
+            <h1>Contact</h1>
+            <div id="footer">
+                <p>
+                    Website Template for Practical-9 <a href="https://www.beta-labs.in/" target="_blank">Beta-Labs</a>
+                </p>
+                <a href="#top">Back to Top</a>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
