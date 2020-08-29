@@ -23,7 +23,7 @@
             display: none;
             margin-right: 15px;
         }
-
+        
         #chk {
             position: absolute;
             display: none;
@@ -84,7 +84,6 @@
                 background-color: white;
                 color: black;
                 transition: 0.4s;
-                 
             }
             #nav li a:hover i {
                 background-color: white;
