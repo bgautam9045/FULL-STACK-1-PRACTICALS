@@ -8,372 +8,321 @@
     <link rel="stylesheet" href="../css/practical-9.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-    * {
+   *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-    scroll-padding: 90px;
-}
-
-#container {
-    width: 100%;
-}
-
-.heading {
-    font-size: 40px;
-    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;}
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 80px 0px 0px;
 }
-
-#header {
+h3{
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+#content{
     width: 100%;
-    height: 90px;
-    padding: 0px 20px;
-    background-color: crimson;
-    position: fixed;
-    top: 0;
-    z-index: 1;
+    padding: 0px 1% 1%;
+    background-color: white;
 }
-
+#header{
+    background-color: gray;
+        height: 70px;
+        color: white;
+        padding: 0px 20px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 1;
+        overflow: hidden;
+}    
 #header::after {
     content: "";
     display: block;
     clear: both;
 }
-
-#logo {
+#header h1{
+    line-height: 70px;
+    color: white;
     float: left;
-    line-height: 90px;
-    color: white;
-    font-size: 50px;
-    margin-left: 10px;
-}
-
-#header #nav {
-    list-style: none;
-    float: right;
-}
-
-#nav li {
-    display: inline-block;
-    line-height: 90px;
-}
-
-#nav li a {
-    padding: 0px 20px;
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
     text-transform: uppercase;
 }
-
-#nav li a i {
+html{
+    scroll-behavior: smooth;
+}
+.nav{
+    list-style-type: none;
+    float: right;
+}
+.nav li{
+    display: inline-block;
+    line-height: 70px;
+    padding: 0px 20px;
+}
+.nav li a{
+    display: block;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.nav li a i{
     margin-right: 10px;
 }
-
-#nav li a:hover,
-#show-btn:hover,
-#hide-btn:hover {
+ul.nav li a:hover, .show-button:hover, .hide-button:hover{
     color: black;
-}
-
-#show-btn,
-#hide-btn {
+    }
+.show-button, .hide-button{
     color: white;
-    font-size: 25px;
+    font-size: 30px;
+    line-height: 70px;
+    transition: 0.5s;
     display: none;
 }
-
-#show-btn {
-    position: relative;
-    top: 30px;
-    right: 10px;
+.show-button{
     float: right;
 }
-
-#chk {
-    display: none;
-}
-
-#content {
-    padding: 0px 15px;
-    margin-top: 105px;
-}
-
-#banner {
-    margin-top: 40px;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}
-
-#banner img {
-    width: 100%;
-    height: 100%;
-}
-
-#banner h1 {
+#chk{
+    visibility: hidden;
     position: absolute;
-    top: 20px;
-    left: 20px;
-    margin: 15px;
+    z-index: -10;
+}
+#banner{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: left;
+    margin-bottom: 15px;
+    margin-top: 90px;
+}
+#banner img{
+        height: 100%;
+        width: 100%;
+}
+#banner h1{
     color: white;
-    text-transform: uppercase;
+    padding: 20px;
+    position: absolute;
     font-size: 40px;
 }
-
-#section1 {
+#Section1::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#Section1{
     margin-top: 30px;
 }
-
-#circle_container {
+#circle_container{
     margin-top: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    text-align: center;
-    font-size: large;
-    font-weight: bold;
 }
-
-.members {
+.members{
     margin: 20px 30px;
 }
-
-.circle {
+.members img{
     width: 250px;
+    border-radius: 50%;
     height: 250px;
     border-radius: 50%;
 }
-
-#section2 {
-    margin-top: 30px;
-}
-
-#section2::after {
-    content: "";
+#Section2::after{
+    content: '';
     display: block;
     clear: both;
 }
-
-#left {
-    width: 50%;
+#Section2{ 
+    width: 100%;
+}
+#Section2Left{
+    padding: 4px;
+    width: 49.5%;
+    background-color: gray;
     float: left;
-    background-color: darkblue;
     height: 380px;
     color: white;
-    margin-top: 20px;
-    padding: 0px 10px;
     overflow: auto;
+    margin-bottom:15px;
 }
-
-#left h3 {
-    margin-top: 10px;
+#Section2Right{
+    width: 49.5%;
+    float: right;        
 }
-
-#left p {
-    font-size: large;
-    margin: 20px 0px;
-    text-align: justify;
-}
-
-#right {
-    float: right;
-    width: 48%;
-    margin-top: 20px;
-    height: 380px;
-}
-
-.article {
+#article{
     width: 100%;
     height: 120px;
     margin-bottom: 10px;
     overflow: hidden;
     text-align: center;
     font-size: 30px;
-    font-weight: bolder;
-}
-
-#article1 {
-    background-image: url(../img/project1.jpg);
-    background-size: cover;
-}
-
-#article2 {
-    background-image: url(../img/project2.jpeg);
-    background-size: cover;
-}
-
-#article3 {
-    background-image: url(../img/project3.jpg);
-    background-size: cover;
-}
-
-#section3 {
-    margin-top: 30px;
-}
-
-#box_container {
-    margin-top: 20px;
+    font-weight: bold;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
+    align-items: left;
 }
-
-.card {
-    background-color: lightgrey;
-    width: 250px;
-    height: 470px;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px;
+#article img{
+    background-size: cover;
+}
+#article h5{
+    position: absolute;
+}
+#Section3::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#Section3{
+    margin-left: 4%;
+    margin-right: 4%;   
+}
+#box_container{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+}
+.box{
+    background-color: lightgray;
     margin: 20px 30px;
+    width: 240px;        
+    height: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    color: white;
     overflow: auto;
+    box-shadow: 2px 2px 5px rgb(105, 103, 103);
 }
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-    height: 150px;
-}
-
-.card h3 {
-    text-align: center;
+.box img{
+        width: 100%;
+        height: 150px;
+        border-radius: 5px;
+    }
+.box p{
+        text-align: justify;
+        padding: 4px;
+    }
+.box a{
+        background-color: red;
+        color: white;
+        display: block;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;  
+        margin: 15px; 
+        margin-bottom: 5px; 
+    }
+.box a:hover{
+        background-color: blue;
+    }
+.box h4{
     margin: 10px 0px;
+    text-align: center;
     font-weight: bolder;
 }
-
-.card p {
-    text-align: justify;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+#Footer{
+    background-color: palevioletred;
+        height: 90px;
+        padding: 20px;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 15px;
 }
-
-.card a {
-    display: block;
-    background-color: red;
-    text-align: center;
-    padding: 10px;
-    border-radius: 10px;
-    color: white;
-    text-decoration: none;
-    margin: 15px;
-}
-
-.card a:hover {
-    background-color: blue;
-}
-
-#section4 {
-    margin-top: 30px;
-    padding: 0 15px;
-}
-
-#footer {
-    width: 100%;
-    background-color: purple;
-    color: white;
-    margin-top: 20px;
-    padding: 20px;
-    font-size: larger;
-    text-align: center;
-}
-
-#footer a {
-    color: orange;
-}
-
-#footer a:hover {
-    color: dodgerblue;
-}
-
-@media(max-width:930px) {
-    html {
-        scroll-padding: 330px;
+@media(max-width:946px){
+    html{
+        scroll-padding: 480px;
     }
-    #show-btn,
-    #hide-btn {
+    .show-button, .hide-button{
         display: block;
     }
-    #nav {
-        display: block;
+    .nav{
         position: fixed;
-        background-color: crimson;
+        top: 0;
         right: -100%;
         width: 100%;
-        height: 330px;
+        height: 420px;
+        background-color: rgb(71, 62, 62);
         text-align: center;
-        transition: .4s;
-        padding-top: 30px;
+        line-height: normal;
+        padding: 80px 0px;
+        transition: 0.7s;
     }
-    #chk:checked~#nav {
+    #chk:checked ~ .nav{
         right: 0;
     }
-    #nav li {
-        line-height: 60px;
+    .nav li{
         display: block;
+        line-height: 60px;
         margin: 0px;
     }
-    #nav li a {
+    .nav li a{
         display: block;
+    }
+    .nav li a:hover{
+        display: block;
+        background-color: darkgray;
+    }
+    .hide-button{position: absolute;
+    right: 18px;
+    top: 5px;
+    }
+    #header h1{
+        font-size: 25px;
+    }
+    .nav li a i{
+        margin-right: 15px;
+    }
+}
+@media(max-width: 700px){
+    #Section2Left{
         width: 100%;
     }
-    #nav li a:hover {
-        background-color: black;
-        color: white;
+    #Section2Right{
+        width: 100%
     }
-    #hide-btn {
-        position: absolute;
-        top: 15px;
-        right: 35px;
+    .box{
+        width: 260px;
+    }
+    #banner h1{
+        font-size: 35px;
+    }
+    #Section2Left{
+        margin-bottom: 25px;
+    }
+    #article{
+        margin-bottom: 25px;
+    }
+}
+@media(max-width: 450px){
+    #banner h1{
         font-size: 30px;
     }
-}
-
-@media(max-width:740px) {
-    #left {
-        width: 100%;
+    #content{
+        min-width: 350px;
     }
-    #right {
-        width: 100%;
-    }
-    .card {
-        width: 300px;
-        height: 420px;
-    }
-    .article {
-        height: 160px;
-    }
-    #section2 {
-        margin-bottom: 160px;
-    }
-}
-
-@media(max-width:450px) {
-    #content,
-    #section4 {
-        min-width: 400px;
-    }
-    #banner h1 {
-        font-size: 30px;
-    }
-    .circle {
-        width: 350px;
-        height: 350px;
-        border-radius: 50%;
-    }
-    .card {
+    #box{
         width: 100%;
     }
 }
-    </style>
+@media(max-width: 414px){    
+    #Footer{
+        height: 110px;
+    }
+}
 </head>
 
 <body>
@@ -395,26 +344,26 @@ html {
         </div>
         <div id="content">
             <div id="banner">
-                <img src="../img/banner.jpg" alt="banner">
+                <img src="../images/Banner.jpg" alt="banner">
                 <h1>Practical-8</h1>
             </div>
             <div id="section1">
                 <h3 class="heading">Team Members</h3>
                 <div id="circle_container">
                     <div class="members">
-                        <img src="../img/img1.png" class="circle">
+                        <img src="../images/1.png" class="circle">
                         <p>Team Member-1</p>
                     </div>
                     <div class="members">
-                        <img src="../img/img2.png" class="circle">
+                        <img src="../images/2.png" class="circle">
                         <p>Team Member-2</p>
                     </div>
                     <div class="members">
-                        <img src="../img/img3.png" class="circle">
+                        <img src="../images/3.png" class="circle">
                         <p>Team Member-3</p>
                     </div>
                     <div class="members">
-                        <img src="../img/img4.png" class="circle">
+                        <img src="../images/4.png" class="circle">
                         <p>Team Member-4</p>
                     </div>
                 </div>
@@ -439,32 +388,32 @@ html {
                 <h3 class="heading">Technologies Used</h3>
                 <div id="box_container">
                     <div class="card">
-                        <img src="../img/html.png" alt="html">
+                        <img src="../images/html img.png" alt="html">
                         <h3>Introduction to HTML</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias mollitia laudantium perferendis dolor quibusdam nemo amet quasi exercitationem! Quo nam beatae culpa nostrum est rem quidem neque quam molestias pariatur?
                         </p>
-                        <a href="practical-5-html.html"> Read More </a>
+                        <a href="../practicals/practical-5-html.html"> Read More </a>
                     </div>
                     <div class="card">
-                        <img src="../img/css.jpg" alt="css">
+                        <img src="../images/css img.jpg" alt="css">
                         <h3>Introduction to CSS</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias mollitia laudantium perferendis dolor quibusdam nemo amet quasi exercitationem! Quo nam beatae culpa nostrum est rem quidem neque quam molestias pariatur?
                         </p>
-                        <a href="practical-5-css.html"> Read More </a>
+                        <a href="../practicals/practical-5-css.html"> Read More </a>
                     </div>
                     <div class="card">
-                        <img src="../img/javascript.jpg" alt="javascript">
+                        <img src="../images/JS img.jpg" alt="javascript">
                         <h3>Introduction to JavaScript</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias mollitia laudantium perferendis dolor quibusdam nemo amet quasi exercitationem! Quo nam beatae culpa nostrum est rem quidem neque quam molestias pariatur?
                         </p>
-                        <a href="practical-5-js.html"> Read More </a>
+                        <a href="../practicals/practical-5-js.html"> Read More </a>
                     </div>
                     <div class="card">
-                        <img src="../img/bootstrap.png" alt="bootstrap">
+                        <img src="../images/bootstrap img.png" alt="bootstrap">
                         <h3>Introduction to Bootstrap</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias mollitia laudantium perferendis dolor quibusdam nemo amet quasi exercitationem! Quo nam beatae culpa nostrum est rem quidem neque quam molestias pariatur?
                         </p>
-                        <a href="practical-5-bootstrap.html"> Read More </a>
+                        <a href="../practicals/practical-5-bs.html"> Read More </a>
                     </div>
                 </div>
             </div>
@@ -472,7 +421,7 @@ html {
         <div id="section4">
             <h3 class="heading">Contact</h3>
             <div id="footer">
-                <p>Website Template for Practical-8 &#169; <a href="#">Naina</a> </p>
+                <p> Website Template for Practical-8 &#169; <a href="https://www.beta-labs.in/" target="_blank">Beta-Labs</a> </p>
                 <br>
                 <a href="#top">Back to Top</a>
             </div>
