@@ -84,6 +84,7 @@
                 background-color: white;
                 color: black;
                 transition: 0.4s;
+                 margin-bottom:2px;
             }
             #nav li a:hover i {
                 background-color: white;
