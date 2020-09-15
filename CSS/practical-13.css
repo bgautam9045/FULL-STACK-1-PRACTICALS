@@ -29,9 +29,17 @@ footer{
     float: left;
     color: rgb(199, 196, 196);
 }
+
+.up p{
+            text-align: justify;
+            color: grey;
+            line-height: 24px;
+            margin-top: 10px;
+            color: rgb(199, 196, 196);
+}
 .up ul li{
     list-style: none;
-    padding: 0px 3px 3px;
+    padding: 0px 10px 10px;
 }
 .up ul li a{
     text-decoration: none;
@@ -40,7 +48,7 @@ footer{
 .up h3{
     color: white;
     text-transform: uppercase;
-    margin-bottom: 3px;
+    margin-bottom: 10px;
 }
 .up i{
     padding: 7px;
