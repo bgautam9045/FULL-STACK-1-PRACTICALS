@@ -1,0 +1,242 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#FFDEAD;
+}
+
+h1 {
+    text-align: center;
+    margin: 35px;
+    color: #8B4513;
+    font-size: 65px;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 60px auto;
+}
+
+section {
+    background-color: white;
+    height: 419px;
+    width: 350px;
+    margin: 20px 15px;
+    box-shadow: 3px 3px 8px darkgray;
+}
+
+.header {
+    background-image: linear-gradient(to right,#8B0000,#DC143C,#8B0000);
+    height: 130px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 22px;
+}
+
+h3 {
+    text-align: center;
+    padding: 15px;
+    font-size: 25px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.icons a {
+    margin: 0px 20px;
+    color: white;
+}
+
+.fa-facebook:hover {
+    color: #000080;
+}
+
+.fa-twitter:hover {
+    color: #00FFFF;
+}
+
+.fa-google-plus:hover {
+    color: #8B0000;
+}
+
+.details {
+    margin-top: 25px;
+    padding: 15px;
+}
+
+input[type="email"],
+input[type="password"] {
+    display: block;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin: 15px 0px;
+    height: 30px;
+    outline: none;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.details p {
+    float: right;
+}
+
+.btn {
+    margin: 15px;
+    margin-top: 60px;
+}
+
+.btn::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+button {
+    float: left;
+    display: block;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    box-shadow: 3px 3px 7px gray;
+    color: white;
+    font-size: medium;
+}
+
+.login button {
+    background-color: #8B0000;
+}
+
+.login button:hover {
+    background-color: #FF4500;
+}
+
+.btn p {
+    float: right;
+    line-height: 40px;
+}
+
+.signup h3 {
+    color: #00008B;
+    font-size: 25px;
+}
+
+.signup .details {
+    margin-top: 0px;
+}
+
+input[type="checkbox"] {
+    display: inline;
+    border: none;
+    font-size: 15px;
+}
+
+.signup button {
+    background-color: #00008B;
+}
+
+.signup button:hover {
+    background-color: #4527A0;
+}
+
+.signup .icons {
+    margin-top: 30px;
+    background-image: linear-gradient(to right,#00008B,#0000FF,#00008B);
+    height: 80px;
+}
+
+.signin h3{
+    color: #800080;
+    font-size: 25px;
+}
+.signin .details {
+    margin-top: 0px;
+}
+
+.btn {
+    margin-bottom: 0px;
+}
+
+.signin .btn button {
+    margin-top: 20px;
+    width: 100%;
+    background-image: linear-gradient(to right,#800080,#9400D3,#800080);
+}
+
+.signin button:hover {
+    background-color: ;
+}
+
+.signin .btn p {
+    float: unset;
+    text-align: center;
+}
+
+.signin .icons a {
+    width: 60px;
+    height: 30px;
+    color: #800080;
+    border: 2px solid white;
+    box-shadow: 2px 2px 4px grey;
+    border-radius: 20px;
+    line-height: 30px;
+    text-align: center;
+    
+}
+
+.signin .details label {
+    display: none;
+}
+
+.signin input[type="email"]:focus~label {
+    display: block;
+}
+
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+    border-bottom: 3px solid #8B0000 ;
+}
+
+.signup input[type="email"]:focus,
+.signup input[type="password"]:focus {
+    border-bottom: 3px solid #00008B ;
+}
+
+.signin input[type="email"]:focus,
+.signin input[type="password"]:focus {
+    border-bottom: 3px solid #800080 ;
+}
+
+@media(max-width:760px) {
+    section {
+        width: 70%;
+    }
+}
+
+@media(max-width:480px) {
+    body {
+        min-width: 370px;
+    }
+    section {
+        width: 100%;
+    }
+}
+
+
+
+

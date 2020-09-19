@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-14</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/practical-14.css">
+</head>
+
+<body>
+
+    <H1>FORM TEMPLATES</H1>
+    <article>
+        <section>
+            <form class="login" action="#" name="form1">
+                <div class="header">
+                    <h3>Log In</h3>
+                    <div class="icons">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                </div>
+                <div class="details">
+                    <input type="email" placeholder="Your Email" required name="emailid">
+                    <input type="password" placeholder="Your Password" required name="password">
+                    <p>Forget <span style="font-weight: bolder;color:#DC143C"> Password?</span></p>
+                </div>
+                <div class="btn">
+                    <Button type="submit">LOG IN</Button>
+                    <p>Dont have an account? <span style="font-weight: bolder;color:#DC143C">Sign Up</span></p>
+                </div>
+            </form>
+        </section>
+        <section>
+            <form class="signup" action="#" name="form2">
+                <h3>Sign Up</h3>
+                <div class="details">
+                    <input type="email" placeholder="Your Email" required name="emailid">
+                    <input type="password" placeholder="Your Password" required name="password">
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <label for="terms" style="margin-left: 8px;">Accept the <span style="color: #4527A0;font-weight: bolder">Terms and Conditions</span></label>
+                </div>
+                <div class="btn">
+                    <Button type="submit">SIGN UP</Button>
+                    <p>Have an account? <span style="color: #4527A0;font-weight: bolder">Login</span></p>
+                </div>
+                <div class="icons">
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                </div>
+            </form>
+        </section>
+        <section>
+            <form class="signin" action="#" name="form3">
+                <h3>Sign In</h3>
+                <div class="details">
+                    <label for="emailid">Email:</label>
+                    <input type="email" placeholder="Your Email" required name="emailid" id="emailid">
+                    <input type="password" placeholder="Your Password" required name="password">
+                    <p style="color: #800080; font-weight: bolder;">Forget Password?</p>
+                </div>
+                <div class="btn">
+                    <Button type="submit">SIGN IN</Button>
+                    <p>or Sign in with</p>
+                </div>
+                <div class="icons">
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                </div>
+            </form>
+        </section>
+    </article>
+
+</body>
+
+</html>
