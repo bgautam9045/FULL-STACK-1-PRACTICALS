@@ -12,7 +12,7 @@ h1 {
     text-align: center;
     margin: 35px;
     color: #8B4513;
-    font-size: 65px;
+    font-size: 60px;
 }
 
 article {
@@ -151,7 +151,7 @@ input[type="checkbox"] {
 }
 
 .signup button:hover {
-    background-color: #4527A0;
+    background-color: #0084ff;
 }
 
 .signup .icons {
@@ -171,17 +171,16 @@ input[type="checkbox"] {
 .btn {
     margin-bottom: 0px;
 }
+.signin button:hover {
+    background-color: #ff0084;
+}
 
 .signin .btn button {
     margin-top: 20px;
     width: 100%;
     background-image: linear-gradient(to right,#800080,#9400D3,#800080);
 }
-
-.signin button:hover {
-    background-color: ;
-}
-
+ 
 .signin .btn p {
     float: unset;
     text-align: center;
