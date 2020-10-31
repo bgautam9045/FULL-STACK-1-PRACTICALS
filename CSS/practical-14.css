@@ -12,7 +12,7 @@ h1 {
     text-align: center;
     margin: 35px;
     color: #8B4513;
-    font-size: 45px;
+    font-size: 50px;
 }
 
 article {
@@ -164,6 +164,7 @@ input[type="checkbox"] {
     color: #800080;
     font-size: 25px;
 }
+
 .signin .details {
     margin-top: 0px;
 }
